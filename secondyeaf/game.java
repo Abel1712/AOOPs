@@ -5,9 +5,9 @@ public class game {
         Gamestate g1 = Gamestate.getInstance();
         g1.setGamestate(12,4,"HARD");
         //gamestate
-        System.out.println("scoure =" + g1.score );
-        System.out.println("level =" + g1.currlevel );
-        System.out.println("difficulty =" + g1.difficulty );
+        System.out.println("scoure = " + g1.score );
+        System.out.println("level = " + g1.currlevel );
+        System.out.println("difficulty = " + g1.difficulty );
 
         Scanner sc = new Scanner(System.in);
         String Enemie_type = sc.nextLine();
