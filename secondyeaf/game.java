@@ -101,7 +101,7 @@ class  Robotsfactory extends FactoryEnemies {
 
 
 
-@SuppressWarnings("unused")
+
  class Gamestate {
      private static Gamestate g;
     public int score;
