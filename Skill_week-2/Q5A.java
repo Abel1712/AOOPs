@@ -11,7 +11,7 @@ public class Q5A {
         c.courseId = 123;
         c.couseName =" math";
         c2.courseId =909;
-        c2.couseName = "ok";
+        c2.couseName = "AOOP";
         //student details
         s1.id = 30312;
         s1.name ="Abel";
@@ -36,6 +36,7 @@ public class Q5A {
             System.out.println("name = "+ s.name);
             System.out.println("id = "+ s.id);
             for(int j=0;j<s.courses.size();j++){
+                System.out.println("---------------");
                 CourseModes c = s.courses.get(j);
                 //courses
                 System.out.println("course modes " + c.Modes);

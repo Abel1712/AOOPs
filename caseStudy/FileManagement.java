@@ -2,8 +2,8 @@ import java.util.*;
 public class FileManagement {
    public static void main(String[] args) {
     FileSystem f1 = new File("A.txt");
-    FileSystem f2 = new File("A.txt");
-    FileSystem f3 = new File("A.txt");
+    FileSystem f2 = new File("B.txt");
+    FileSystem f3 = new File("C.txt");
     
     FileSystem d1 = new Directory("dir1");
    try{
@@ -13,7 +13,7 @@ public class FileManagement {
     d1.display();
     d1.remove(f2);
     d1.display();
-    f1.display();
+    
    }
    catch(Cexception exp){
      System.err.println(exp.getMessage());
@@ -33,6 +33,7 @@ public class FileManagement {
  void remove(FileSystem obj) throws Cexception;
 
 }
+//Exception
 class Cexception extends Exception {
     public Cexception(String message) {
         super(message);

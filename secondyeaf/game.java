@@ -10,6 +10,7 @@ public class game {
         System.out.println("difficulty = " + g1.difficulty );
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER enemy type and his character name ");
         String Enemie_type = sc.nextLine();
         String Enemie = sc.nextLine();
         FactoryEnemies fe;
@@ -97,10 +98,6 @@ class  Robotsfactory extends FactoryEnemies {
     }
     
 }
-
-
-
-
 
  class Gamestate {
      private static Gamestate g;
