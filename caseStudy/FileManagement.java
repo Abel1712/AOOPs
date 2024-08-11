@@ -59,7 +59,7 @@ class File implements FileSystem {
     }
 
    public  void add(FileSystem file) throws Cexception{
-    throw new Cexception("Cannot delet from file");
+    throw new Cexception("Cannot add to file");
 }
     }
 
