@@ -12,6 +12,7 @@ public class FileManagement {
     d1.add(f3);
     d1.display();
     d1.remove(f2);
+    System.out.println("File B deleted");
     d1.display();
     
    }
