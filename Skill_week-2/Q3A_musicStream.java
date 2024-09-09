@@ -9,8 +9,8 @@ public class Q3A_musicStream {
         //localfile
         if(musicPlayerType.equals("local")){
 
-            LocalFileMusicPlayer localfile = new LocalFileMusicPlayer();
-            mp = new LocalFileAdapter(localfile);
+            //LocalFileMusicPlayer localfile = new LocalFileMusicPlayer();
+            mp = new LocalFileAdapter(new LocalFileMusicPlayer());
             String str = "hi" ;
             
             while(!str.equalsIgnoreCase("exit")){
@@ -78,20 +78,20 @@ public class Q3A_musicStream {
 }
 //Adapter 
  class LocalFileAdapter implements MusicPlayer {
-    private LocalFileMusicPlayer localFileMusicPlayer;
+    private LocalFileMusicPlayer localFileMusicPlayer1;
 
     public LocalFileAdapter(LocalFileMusicPlayer localFileMusicPlayer) {
-        this.localFileMusicPlayer = localFileMusicPlayer;
+        localFileMusicPlayer1 = localFileMusicPlayer;
     }
 
     @Override
     public void play() {
-        localFileMusicPlayer.playLocalFile();
+        localFileMusicPlayer1.playLocalFile();
     }
 
     @Override
     public void stop() {
-        localFileMusicPlayer.stopLocalFile();
+        localFileMusicPlayer1.stopLocalFile();
     }
 }
 

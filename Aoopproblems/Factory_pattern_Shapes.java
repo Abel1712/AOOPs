@@ -27,7 +27,7 @@ interface Shape{
 class Square implements Shape  {
   
     public void getShape(){
-        System.out.println("I am the perfect erpresentation of equality");
+        System.out.println("I am the perfect representation of equality");
     }
   }
   
