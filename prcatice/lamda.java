@@ -9,7 +9,7 @@ public class lamda {
     //     System.out.println("meow");
     // }); 
     //   oR
-    printable k = ()-> System.out.println("meow");
+    printable k = ()-> System.out.println("haaa");
     printThing(k);
     }
 

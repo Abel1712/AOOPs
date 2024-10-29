@@ -129,6 +129,7 @@ public class t2 {
     }
 
     // Comparison method to support both natural ordering and custom comparator
+    @SuppressWarnings("unchecked")
     private int compare(T item1, T item2) {
         if (comparator != null) {
             return comparator.compare(item1, item2);
